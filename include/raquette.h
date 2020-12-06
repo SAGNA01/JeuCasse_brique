@@ -1,19 +1,14 @@
 #ifndef RAQUETTE_H
 #define RAQUETTE_H
+#include "formeRectangle.h"
 
-
-class raquette
+class raquette : public formeRectangle
 {
     public:
-        raquette();
-        raquette(int x, int y, int largeur, int hauteur);
-        virtual ~raquette();
-        void redon
+        raquette(int x, int y, double largeur, double hauteur);
+        void deplace();
     private:
-        int d_x;
-        int d_y;
-        int d_hauteur;
-        int d_largeur;
+
 };
 
 #endif // RAQUETTE_H

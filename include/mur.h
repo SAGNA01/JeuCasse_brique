@@ -7,9 +7,6 @@ class mur
     public:
         mur();
         virtual ~mur();
-
-    protected:
-
     private:
 };
 

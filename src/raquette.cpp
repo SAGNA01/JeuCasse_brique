@@ -1,11 +1,7 @@
 #include "raquette.h"
 
-raquette::raquette()
+raquette::raquette(int x, int y, double largeur, double hauteur) : formeRectangle{x, y, largeur, hauteur}
 {
-    //ctor
+
 }
 
-raquette::~raquette()
-{
-    //dtor
-}
