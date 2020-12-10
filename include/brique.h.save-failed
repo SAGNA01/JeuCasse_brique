@@ -5,9 +5,8 @@
 class brique : public formeRectangle
 {
     public:
-
         brique(int positionX, int positionY, int largeur, int hauteur);
-
+        //void collusion(balle& balle);
     private:
         bool d_etat;
 };

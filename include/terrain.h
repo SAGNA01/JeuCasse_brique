@@ -1,15 +1,19 @@
 #ifndef TERRAIN_H
 #define TERRAIN_H
 #include<vector>
-#include"mur.h"
 
-class terrain
+#include"formeRectangle.h"
+
+
+class terrain : public formeRectangle
 {
     public:
-        terrain();
-        virtual ~terrain();
+        terrain( int largeur, int hauteur);
+        terrain( std::vector<formeRectangle*> briques);
+        ~terrain();
     private:
-        std::vector<mur> m_murs;
+
+        std::vector<formeRectangle*> m_briques;
 };
 
 #endif // TERRAIN_H

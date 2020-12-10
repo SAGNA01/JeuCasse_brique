@@ -5,9 +5,12 @@
 class raquette : public formeRectangle
 {
     public:
-        raquette(int x, int y, double largeur, double hauteur);
-        void deplace();
+        raquette();
+        raquette(int positionX, int positionY, int largeur, int hauteur);
+        void deplacerGauche();
+        void deplacerDroite();
     private:
+
 
 };
 

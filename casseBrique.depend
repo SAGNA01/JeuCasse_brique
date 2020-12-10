@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1607636989 source:d:\202021\uha\qualite de pro\src\main.cpp
+	<iostream>
+	"math.h"
+	"graphics.h"
+	"balle.h"
+	"balleUI.h"
+	"formeRectangle.h"
+	"terrain.h"
+	"raquette.h"
+
+1607284438 source:d:\202021\uha\qualite de pro\src\mur.cpp
+	"mur.h"
+
+1607284330 d:\202021\uha\qualite de pro\include\mur.h
+
+1607275551 source:d:\202021\uha\qualite de pro\src\terrain.cpp
+	"terrain.h"
+
+1607637466 d:\202021\uha\qualite de pro\include\terrain.h
+	<vector>
+	"formeRectangle.h"
+
+1607573624 source:d:\202021\uha\qualite de pro\src\formerectangle.cpp
+	"formeRectangle.h"
+
+1607573683 d:\202021\uha\qualite de pro\include\formerectangle.h
+
+1607571891 source:d:\202021\uha\qualite de pro\src\brique.cpp
+	"brique.h"
+
+1607637466 d:\202021\uha\qualite de pro\include\brique.h
+	"formeRectangle.h"
+
+1607636981 source:d:\202021\uha\qualite de pro\src\raquette.cpp
+	"raquette.h"
+	"graphics.h"
+
+1607636973 d:\202021\uha\qualite de pro\include\raquette.h
+	"formeRectangle.h"
+
+1607453148 source:d:\202021\uha\qualite de pro\src\winbgi.cpp
+	<windows.h>
+	<stddef.h>
+	<stdio.h>
+	<math.h>
+	"graphics.h"
+
+1380997620 d:\202021\uha\qualite de pro\include\graphics.h
+
+1607636449 source:d:\202021\uha\qualite de pro\src\balle.cpp
+	"balle.h"
+	"listeAngles.h"
+
+1607552278 d:\202021\uha\qualite de pro\include\balle.h
+	"terrain.h"
+	<iostream>
+
+1607542256 d:\202021\uha\qualite de pro\include\listeangles.h
+
+1607636501 source:d:\202021\uha\qualite de pro\src\balleui.cpp
+	"balleUI.h"
+
+1607632846 d:\202021\uha\qualite de pro\include\balleui.h
+	"balle.h"
+	"graphics.h"
+	"raquette.h"
+

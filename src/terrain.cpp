@@ -2,10 +2,10 @@
 
 terrain::terrain()
 {
-    //ctor
+
 }
 
 terrain::~terrain()
 {
-    //dtor
+
 }

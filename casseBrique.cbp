@@ -34,13 +34,24 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/balle.h" />
+		<Unit filename="include/balleUI.h" />
 		<Unit filename="include/brique.h" />
+		<Unit filename="include/formeRectangle.h" />
+		<Unit filename="include/graphics.h" />
+		<Unit filename="include/listeAngles.h" />
 		<Unit filename="include/mur.h" />
 		<Unit filename="include/raquette.h" />
+		<Unit filename="include/terrain.h" />
+		<Unit filename="src/balle.cpp" />
+		<Unit filename="src/balleUI.cpp" />
 		<Unit filename="src/brique.cpp" />
+		<Unit filename="src/formeRectangle.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/mur.cpp" />
 		<Unit filename="src/raquette.cpp" />
+		<Unit filename="src/terrain.cpp" />
+		<Unit filename="src/winbgi.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

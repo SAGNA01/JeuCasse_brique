@@ -5,9 +5,13 @@
 class mur
 {
     public:
-        mur();
-        virtual ~mur();
+        mur(int longueur, int largeur);
+        int getLongueur() const;
+        int getLargeur() const;
+        ~mur();
     private:
+        int d_longueur;
+        int d_largeur;
 };
 
 #endif // MUR_H

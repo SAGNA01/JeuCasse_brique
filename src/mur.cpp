@@ -1,6 +1,6 @@
 #include "mur.h"
 
-mur::mur()
+mur::mur(int longueur, int largeur) : d_longueur{longueur}, d_largeur{largeur}
 {
 
 }

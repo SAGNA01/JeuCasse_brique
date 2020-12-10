@@ -1,28 +1,48 @@
 #include "formeRectangle.h"
 
-formeRectangle::formeRectangle(int x, int y, double largeur, double hauteur) : d_x{x}, d_y{y}, d_largeur{largeur},
-                                                                               d_hauteur{hauteur}
+formeRectangle::formeRectangle(int positionX, int positionY, int largeur, int hauteur) : d_positionX{positionX},
+                                                                                         d_positionY{positionY},
+                                                                                         d_largeur{largeur},
+                                                                                         d_hauteur{hauteur}
 {
 
 }
 
-int formeRectangle::getX() const
+int formeRectangle::getPositionX() const
 {
-    return d_x;
+    return d_positionX;
 }
 
-int formeRectangle::getY() const
+int formeRectangle::getPositionY() const
 {
-    return d_y;
+    return d_positionY;
 }
 
-double formeRectangle::getLargeur() const
+int formeRectangle::getLargeur() const
 {
     return d_largeur;
 }
 
-double formeRectangle::getHauteur() const
+int formeRectangle::getHauteur() const
 {
     return d_hauteur;
 }
 
+void formeRectangle::setPositionX(int position_x)
+{
+    d_positionX = position_x;
+}
+
+void formeRectangle::setPositionY(int position_y)
+{
+    d_positionY = position_y;
+}
+void formeRectangle::setLargeur(int largeur)
+{
+    d_largeur = largeur;
+}
+
+void formeRectangle::setHauteur(int hauteur)
+{
+    d_hauteur = hauteur;
+}
