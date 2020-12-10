@@ -9,7 +9,7 @@ class terrain : public formeRectangle
 {
     public:
         terrain( int largeur, int hauteur);
-        terrain( std::vector<formeRectangle*> briques);
+      //  terrain( std::vector<formeRectangle*> briques);
         ~terrain();
     private:
 

@@ -2,6 +2,7 @@
 #define BALL_H
 #include"terrain.h"
 #include <iostream>
+#include"terrain.h"
 class balle
 {
 private:
@@ -24,7 +25,7 @@ public:
     void setAngle(int angle);
     void setRayon(int rayon);
     void deplacement();
-    void rebond();
+    void rebond(const terrain&);
 
 };
 #endif

@@ -17,6 +17,7 @@ int main(int argc, char** argv)
     balle b{};
     balleUI ui{};
     rectangle(0,450,350,0);
+    ui.
     while(true)
     {
 

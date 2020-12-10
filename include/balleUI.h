@@ -9,7 +9,7 @@ class balleUI
         balleUI();
         virtual ~balleUI();
         void  dessinerLaBalle(const balle& _balle);
-        void  dessinerLaRaquette(const raquette& r);
+
     protected:
 
     private:

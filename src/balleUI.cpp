@@ -22,14 +22,4 @@ void balleUI::dessinerLaBalle(const balle& _balle)
 
 }
 
-void balleUI::dessinerLaRaquette(const raquette& r)
-{
-    int x = r.getPositionX();
-    int y = r.getPositionY();
-    int largeur = r.getLargeur();
-    int hauteur = r.getHauteur();
 
-    rectangle(x,y,largeur, hauteur);
-    floodfill(x,y,YELLOW);
-
-}
