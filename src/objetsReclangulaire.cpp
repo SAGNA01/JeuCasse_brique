@@ -1,6 +1,7 @@
-#include "formeRectangle.h"
+#include "objetsReclangulaire.h"
 
-formeRectangle::formeRectangle(int positionX, int positionY, int largeur, int hauteur) : d_positionX{positionX},
+
+objetsReclangulaire::objetsReclangulaire(int positionX, int positionY, int largeur, int hauteur) : d_positionX{positionX},
                                                                                          d_positionY{positionY},
                                                                                          d_largeur{largeur},
                                                                                          d_hauteur{hauteur}
@@ -8,41 +9,42 @@ formeRectangle::formeRectangle(int positionX, int positionY, int largeur, int ha
 
 }
 
-int formeRectangle::getPositionX() const
+int objetsReclangulaire::getPositionX() const
 {
     return d_positionX;
 }
 
-int formeRectangle::getPositionY() const
+int objetsReclangulaire::getPositionY() const
 {
     return d_positionY;
 }
 
-int formeRectangle::getLargeur() const
+int objetsReclangulaire::getLargeur() const
 {
     return d_largeur;
 }
 
-int formeRectangle::getHauteur() const
+int objetsReclangulaire::getHauteur() const
 {
     return d_hauteur;
 }
 
-void formeRectangle::setPositionX(int position_x)
+void objetsReclangulaire::setPositionX(int position_x)
 {
     d_positionX = position_x;
 }
 
-void formeRectangle::setPositionY(int position_y)
+void objetsReclangulaire::setPositionY(int position_y)
 {
     d_positionY = position_y;
 }
-void formeRectangle::setLargeur(int largeur)
+void objetsReclangulaire::setLargeur(int largeur)
 {
     d_largeur = largeur;
 }
 
-void formeRectangle::setHauteur(int hauteur)
+void objetsReclangulaire::setHauteur(int hauteur)
 {
     d_hauteur = hauteur;
 }
+

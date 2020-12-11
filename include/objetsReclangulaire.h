@@ -1,12 +1,12 @@
-#ifndef FORMERECTANGLE_H
-#define FORMERECTANGLE_H
+#ifndef OBJETSRECLANGULAIRE_H
+#define OBJETSRECLANGULAIRE_H
 
 
-class formeRectangle
+class objetsReclangulaire
 {
     public:
-        formeRectangle(int positionX, int positionY, int largeur, int hauteur);
-        ~formeRectangle() = default;
+        objetsReclangulaire(int positionX, int positionY, int largeur, int hauteur);
+        virtual ~objetsReclangulaire() = default;
 
         int getPositionX() const;
         int getPositionY() const;
@@ -24,4 +24,4 @@ class formeRectangle
         double d_hauteur;
 };
 
-#endif // FORMERECTANGLE_H
+#endif // OBJETSRECLANGULAIRE_H
