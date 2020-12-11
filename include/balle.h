@@ -3,6 +3,7 @@
 #include"terrain.h"
 #include <iostream>
 #include"terrain.h"
+#include "raquette.h"
 class balle
 {
 private:
@@ -25,7 +26,7 @@ public:
     void setAngle(int angle);
     void setRayon(int rayon);
     void deplacement();
-    void rebond(const terrain&);
+    void rebond(const terrain& _terrain,const raquette& _raquette);
 
 };
 #endif

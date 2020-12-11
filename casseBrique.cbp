@@ -41,6 +41,7 @@
 		<Unit filename="include/graphics.h" />
 		<Unit filename="include/listeAngles.h" />
 		<Unit filename="include/raquette.h" />
+		<Unit filename="include/raquetteUI.h" />
 		<Unit filename="include/terrain.h" />
 		<Unit filename="src/balle.cpp" />
 		<Unit filename="src/balleUI.cpp" />
@@ -48,6 +49,7 @@
 		<Unit filename="src/formeRectangle.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/raquette.cpp" />
+		<Unit filename="src/raquetteUI.cpp" />
 		<Unit filename="src/terrain.cpp" />
 		<Unit filename="src/winbgi.cpp" />
 		<Extensions>

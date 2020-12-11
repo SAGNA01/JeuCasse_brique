@@ -87,9 +87,25 @@ void balle::deplacement()
     }
 }
 
-void balle::rebond()
+void balle::rebond(const terrain& _terrain,const raquette& _raquette)
 {
+    // Collision mur avec  la raquette
+     if (this->getPositionY() - this->getRayon() == _raquette.getHauteur() && this->getPositionX()>=_raquette.getPositionX() && this->getPositionX()<=(_raquette.getPositionX()+_raquette.getLargeur()) )
+     {
 
+        if (this->getAngle() <= angles.anglePlat)
+        {
+
+            std::cout << "1 \n";
+            this->setAngle(this->getAngle()-angles.angleDroit);
+        }
+        else
+        {
+              std::cout << "2
+               \n";
+            this->setAngle(this->getAngle()+angles.angleDroit);
+        }
+     }
     // Collision mur de gauche
     if(this->d_positionX   < this->getRayon() )
     {
@@ -105,7 +121,7 @@ void balle::rebond()
     }
 
     // Parail avec le mur de droite
-    if(this->getPositionX()> 350 - this->getRayon())
+    if(this->getPositionX()> _terrain.getLargeur() - this->getRayon())
     {
         if (this->getAngle() <= angles.anglePlat)
         {
@@ -118,7 +134,7 @@ void balle::rebond()
     }
 
     // Si la collision se fait sur le mur du haut
-    if(this->getPositionY() > 450 - this->getRayon())
+    if(this->getPositionY() > _terrain.getHauteur() - this->getRayon())
     {
         if (this->getAngle() <= angles.angleDroit)
         {

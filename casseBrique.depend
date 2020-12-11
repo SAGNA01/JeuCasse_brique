@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1607636989 source:d:\202021\uha\qualite de pro\src\main.cpp
+1607647198 source:d:\202021\uha\qualite de pro\src\main.cpp
 	<iostream>
+	<conio.h>
 	"math.h"
 	"graphics.h"
 	"balle.h"
@@ -8,16 +9,17 @@
 	"formeRectangle.h"
 	"terrain.h"
 	"raquette.h"
+	"raquetteUI.h"
 
 1607284438 source:d:\202021\uha\qualite de pro\src\mur.cpp
 	"mur.h"
 
 1607284330 d:\202021\uha\qualite de pro\include\mur.h
 
-1607275551 source:d:\202021\uha\qualite de pro\src\terrain.cpp
+1607638655 source:d:\202021\uha\qualite de pro\src\terrain.cpp
 	"terrain.h"
 
-1607637466 d:\202021\uha\qualite de pro\include\terrain.h
+1607638474 d:\202021\uha\qualite de pro\include\terrain.h
 	<vector>
 	"formeRectangle.h"
 
@@ -32,12 +34,13 @@
 1607637466 d:\202021\uha\qualite de pro\include\brique.h
 	"formeRectangle.h"
 
-1607636981 source:d:\202021\uha\qualite de pro\src\raquette.cpp
+1607640076 source:d:\202021\uha\qualite de pro\src\raquette.cpp
 	"raquette.h"
 	"graphics.h"
 
-1607636973 d:\202021\uha\qualite de pro\include\raquette.h
+1607640011 d:\202021\uha\qualite de pro\include\raquette.h
 	"formeRectangle.h"
+	"terrain.h"
 
 1607453148 source:d:\202021\uha\qualite de pro\src\winbgi.cpp
 	<windows.h>
@@ -48,21 +51,31 @@
 
 1380997620 d:\202021\uha\qualite de pro\include\graphics.h
 
-1607636449 source:d:\202021\uha\qualite de pro\src\balle.cpp
+1607647779 source:d:\202021\uha\qualite de pro\src\balle.cpp
 	"balle.h"
 	"listeAngles.h"
 
-1607552278 d:\202021\uha\qualite de pro\include\balle.h
+1607647184 d:\202021\uha\qualite de pro\include\balle.h
 	"terrain.h"
 	<iostream>
+	"terrain.h"
+	"raquette.h"
 
 1607542256 d:\202021\uha\qualite de pro\include\listeangles.h
 
-1607636501 source:d:\202021\uha\qualite de pro\src\balleui.cpp
+1607647692 source:d:\202021\uha\qualite de pro\src\balleui.cpp
 	"balleUI.h"
 
-1607632846 d:\202021\uha\qualite de pro\include\balleui.h
+1607638472 d:\202021\uha\qualite de pro\include\balleui.h
 	"balle.h"
+	"graphics.h"
+	"raquette.h"
+
+1607647184 source:d:\202021\uha\qualite de pro\src\raquetteui.cpp
+	"raquetteUI.h"
+
+1607643088 d:\202021\uha\qualite de pro\include\raquetteui.h
+	<iostream>
 	"graphics.h"
 	"raquette.h"
 
