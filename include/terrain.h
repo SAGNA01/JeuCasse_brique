@@ -1,19 +1,23 @@
 #ifndef TERRAIN_H
 #define TERRAIN_H
 #include<vector>
+#include"objetsReclangulaire.h"
+#include"brique.h"
 
-#include"formeRectangle.h"
 
 
-class terrain : public formeRectangle
+class terrain : public objetsReclangulaire
 {
     public:
-        terrain( int largeur, int hauteur);
-      //  terrain( std::vector<formeRectangle*> briques);
+        terrain(int largeur, int hauteur);
+        int nombreDeBriques () const;
+        void ajouterUneBrique( brique* _brique);
+        std::vector<brique*> getBriques () const;
+
+        int nombreDeBriquesNonCassee() const;
         ~terrain();
     private:
-
-        std::vector<formeRectangle*> m_briques;
+        std::vector<brique*> d_briques;
 };
 
 #endif // TERRAIN_H

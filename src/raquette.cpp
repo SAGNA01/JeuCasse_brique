@@ -2,27 +2,27 @@
 #include "graphics.h"
 
 
-raquette::raquette(int positionX, int positionY, int largeur, int hauteur) : formeRectangle{positionX, positionY,
-            largeur, hauteur}
+raquette::raquette(int positionX, int positionY, int largeur, int hauteur, int pasDeplacement) : objetsReclangulaire{positionX,
+                                                                                                 positionY, largeur, hauteur},
+                                                                                                 d_pasDeplacement{pasDeplacement}
+
 {
 
 }
 
-
-
-void raquette::deplacerGauche(const terrain& _terrain)
+void raquette::deplacerGauche(terrain* _terrain)
 {
-    if (this->getPositionX() > 0)
+    if (this->getPositionX() > _terrain->getPositionX())
     {
-        this->setPositionX( this->getPositionX()-1);
+        this->setPositionX( this->getPositionX() - d_pasDeplacement);
     }
 }
 
-void raquette::deplacerDroite(const terrain& _terrain)
+void raquette::deplacerDroite( terrain* _terrain)
 {
-    if (this->getPositionX()<  (_terrain.getLargeur()  - this->getLargeur()) )
+    if (this->getPositionX() <  (_terrain->getLargeur() - this->getLargeur()) )
     {
-        this->setPositionX( this->getPositionX()+1) ;
+        this->setPositionX( this->getPositionX() + d_pasDeplacement) ;
     }
 
 }

@@ -34,23 +34,27 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/affichageGraphique.h" />
 		<Unit filename="include/balle.h" />
-		<Unit filename="include/balleUI.h" />
 		<Unit filename="include/brique.h" />
-		<Unit filename="include/formeRectangle.h" />
+		<Unit filename="include/doctest.h" />
 		<Unit filename="include/graphics.h" />
 		<Unit filename="include/listeAngles.h" />
+		<Unit filename="include/objetsDuJeu.h" />
+		<Unit filename="include/objetsReclangulaire.h" />
+		<Unit filename="include/partie.h" />
 		<Unit filename="include/raquette.h" />
-		<Unit filename="include/raquetteUI.h" />
 		<Unit filename="include/terrain.h" />
+		<Unit filename="src/affichageGraphique.cpp" />
 		<Unit filename="src/balle.cpp" />
-		<Unit filename="src/balleUI.cpp" />
 		<Unit filename="src/brique.cpp" />
-		<Unit filename="src/formeRectangle.cpp" />
 		<Unit filename="src/main.cpp" />
+		<Unit filename="src/objetsDuJeu.cpp" />
+		<Unit filename="src/objetsReclangulaire.cpp" />
+		<Unit filename="src/partie.cpp" />
 		<Unit filename="src/raquette.cpp" />
-		<Unit filename="src/raquetteUI.cpp" />
 		<Unit filename="src/terrain.cpp" />
+		<Unit filename="src/testBalle.cpp" />
 		<Unit filename="src/winbgi.cpp" />
 		<Extensions>
 			<code_completion />

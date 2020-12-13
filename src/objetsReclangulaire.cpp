@@ -2,9 +2,9 @@
 
 
 objetsReclangulaire::objetsReclangulaire(int positionX, int positionY, int largeur, int hauteur) : d_positionX{positionX},
-                                                                                         d_positionY{positionY},
-                                                                                         d_largeur{largeur},
-                                                                                         d_hauteur{hauteur}
+                                                                                                   d_positionY{positionY},
+                                                                                                   d_largeur{largeur},
+                                                                                                   d_hauteur{hauteur}
 {
 
 }
@@ -38,6 +38,7 @@ void objetsReclangulaire::setPositionY(int position_y)
 {
     d_positionY = position_y;
 }
+
 void objetsReclangulaire::setLargeur(int largeur)
 {
     d_largeur = largeur;
