@@ -5,11 +5,6 @@ terrain::terrain(int largeur, int hauteur) : objetsReclangulaire{0, 0, largeur, 
 
 }
 
-terrain::~terrain()
-{
-
-}
-
 int terrain::nombreDeBriques() const
 {
     return  d_briques.size();
@@ -18,8 +13,6 @@ int terrain::nombreDeBriques() const
 void terrain::ajouterUneBrique( brique* _brique)
 {
     d_briques.push_back(_brique);
-
-
 }
 
 int terrain::nombreDeBriquesNonCassee() const

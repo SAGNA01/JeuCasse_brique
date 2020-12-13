@@ -2,7 +2,6 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <math.h>
-
 #include "graphics.h"
 
 #define MAX_PAGES 16

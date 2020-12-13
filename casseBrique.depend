@@ -95,7 +95,7 @@
 	"brique.h"
 	"objetsDuJeu.h"
 
-1607871380 c:\users\sagna\desktop\projetqualiecode\include\terrain.h
+1607878099 c:\users\sagna\desktop\projetqualiecode\include\terrain.h
 	<vector>
 	"objetsReclangulaire.h"
 	"brique.h"
@@ -123,7 +123,7 @@
 
 1607680734 c:\users\sagna\desktop\projetqualiecode\include\listeangles.h
 
-1607867982 source:c:\users\sagna\desktop\projetqualiecode\src\main.cpp
+1607877582 source:c:\users\sagna\desktop\projetqualiecode\src\main.cpp
 	<iostream>
 	<conio.h>
 	"math.h"
@@ -151,7 +151,7 @@
 	"terrain.h"
 	"iostream"
 
-1607680734 source:c:\users\sagna\desktop\projetqualiecode\src\winbgi.cpp
+1607877582 source:c:\users\sagna\desktop\projetqualiecode\src\winbgi.cpp
 	<windows.h>
 	<stddef.h>
 	<stdio.h>
@@ -164,7 +164,7 @@
 1607865224 source:c:\users\sagna\desktop\projetqualiecode\src\objetsreclangulaire.cpp
 	"objetsReclangulaire.h"
 
-1607867818 source:c:\users\sagna\desktop\projetqualiecode\src\testballe.cpp
+1607874052 source:c:\users\sagna\desktop\projetqualiecode\src\testballe.cpp
 	"balle.h"
 
 1607873990 c:\users\sagna\desktop\projetqualiecode\include\objetsdujeu.h
@@ -183,7 +183,7 @@
 1607865423 source:c:\users\sagna\desktop\projetqualiecode\src\affichagegraphique.cpp
 	"affichageGraphique.h"
 
-1607872174 c:\users\sagna\desktop\projetqualiecode\include\affichagegraphique.h
+1607876064 c:\users\sagna\desktop\projetqualiecode\include\affichagegraphique.h
 	"balle.h"
 	"graphics.h"
 	"raquette.h"

@@ -15,7 +15,6 @@ class terrain : public objetsReclangulaire
         std::vector<brique*> getBriques () const;
 
         int nombreDeBriquesNonCassee() const;
-        ~terrain();
     private:
         std::vector<brique*> d_briques;
 };
