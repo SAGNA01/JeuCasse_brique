@@ -1,7 +1,7 @@
 #include "brique.h"
 
 brique::brique(int positionX, int positionY, int largeur, int hauteur) : objetsReclangulaire{positionX,
-                                                                         positionY, largeur, hauteur},d_etat{true}
+                                                                         positionY, largeur, hauteur}, d_etat{true}
 {
 
 }

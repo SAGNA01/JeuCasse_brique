@@ -26,13 +26,13 @@ int main(int argc, char** argv)
     balle b{};
 
     terrain* t ;
-    t = new terrain (300,450) ;
+    t = new terrain (0,0,300,450) ;
     partie* p;
-    p = new partie(t,60);
+    p = new partie(t,88);
 
     uI.dessinerLaRaquette(r);
     uI.dessinerLeTerrain(p);
-    std::cout << "nb ->" << p->getTerrain()->getBriques().size();
+
     int c = 0;
     while(true)
     {
@@ -56,17 +56,12 @@ int main(int argc, char** argv)
 
                 break;
             }
-
         }
-
         uI.dessinerLaBalle(b);
         b.rebond(t,r);
         b.deplacement();
         uI.effacerLesBriqueCasses(t);
-
     }
-
-
     getch();
     closegraph();
     return 0;

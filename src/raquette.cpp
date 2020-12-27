@@ -14,7 +14,7 @@ void raquette::deplacerGauche(terrain* _terrain)
 {
     if (this->getPositionX() > _terrain->getPositionX())
     {
-        this->setPositionX( this->getPositionX() - d_pasDeplacement);
+        this->setPositionX(this->getPositionX() - d_pasDeplacement);
     }
 }
 
@@ -24,5 +24,4 @@ void raquette::deplacerDroite( terrain* _terrain)
     {
         this->setPositionX( this->getPositionX() + d_pasDeplacement) ;
     }
-
 }

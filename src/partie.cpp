@@ -23,11 +23,10 @@ bool partie::partieEstGagner() const
 void partie::creerLesBriques()
 {
     int x_init = this->getTerrain()->getLargeur();
-       int y_init = this->getTerrain()->getHauteur() -15;
+    int y_init = this->getTerrain()->getHauteur() -15;
 
-    for (int  i = 0;i<this->getNbbriques();i++)
+    for (int  i = 0; i <this->getNbbriques(); i++)
     {
-
        brique _brique{x_init,y_init,50,15};
        if (x_init > 50 )
       {
@@ -39,7 +38,6 @@ void partie::creerLesBriques()
         x_init = this->getTerrain()->getLargeur();
         y_init =y_init +15 ;
       }
-
     }
 }
 int partie::getNbbriques() const

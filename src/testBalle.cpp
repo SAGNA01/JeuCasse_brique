@@ -1,6 +1,8 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 //#include "doctest.h"
 #include"balle.h"
+#include"raquette.h"
+#include "terrain.h"
 
 /*
 TEST_CASE("Teste de la classe balle")
@@ -25,10 +27,12 @@ TEST_CASE("Teste de la classe balle")
 TEST_CASE(" Teste de la classe raquette ")
 {
     int pasDeplacement = 1;
+    int posX = 5;
+    int posY = 5;
     int const HAUTEUR = 50;
     int const LARGEUR = 15;
-    terrain t;
-    raquette r{0,0, HAUTEUR, LARGEUR, pasDeplacement};
+    //terrain t{};
+    raquette r{posX, posY, HAUTEUR, LARGEUR, pasDeplacement};
     SUBCASE(" La raquette est bien construite "){
         CHECK(r.getPositionY() == 0);
         CHECK(r.getPositionX() == 0);
@@ -36,10 +40,11 @@ TEST_CASE(" Teste de la classe raquette ")
         CHECK(r.getLargeur() == LARGEUR);
     }
     SUBCASE(" Deplacement gauche "){
-        CHECK(r.deplacerGauche(t&) == - pasDeplacement);
+        //REQUIRE_EQ(r.deplacerGauche(t&) == posX -pasDeplacement);
     }
     SUBCASE(" Deplacement droit "){
-        CHECK(r.deplacerDroite(t&) == + pasDeplacement);
+        //CHECK(r.deplacerDroite(t&) == posX +pasDeplacement);
     }
 }
+
 */

@@ -15,8 +15,8 @@ Angle dont la mesure est de 360 degrés.
   struct listeAngles {
   const int angleNul = 0;
   const int angleDroit = 90;
-  const int anglePlat =180 ;
-  const int angleRentrant=270;
+  const int anglePlat = 180 ;
+  const int angleRentrant = 270;
   const int anglePlein = 360;
 
 } angles;

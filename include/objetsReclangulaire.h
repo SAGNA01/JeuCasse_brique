@@ -1,27 +1,26 @@
 #ifndef OBJETSRECLANGULAIRE_H
 #define OBJETSRECLANGULAIRE_H
-#include "objetsDuJeu.h"
 
-class objetsReclangulaire : public objetsDuJeu
+class objetsReclangulaire
 {
     public:
         objetsReclangulaire(int positionX, int positionY, int largeur, int hauteur);
         ~objetsReclangulaire() = default;
 
-        virtual int getPositionX() const override;
-        virtual int getPositionY() const override;
+        virtual int getPositionX() const;
+        virtual int getPositionY() const;
         virtual int getLargeur() const;
         virtual int getHauteur() const;
 
-        virtual void setPositionX(int position_x) override;
-        virtual void setPositionY(int position_y) override;
+        virtual void setPositionX(int position_x);
+        virtual void setPositionY(int position_y);
         void setLargeur(int largeur);
         void setHauteur(int hauteur);
     protected:
         int d_positionX;
         int d_positionY;
-        double d_largeur;
-        double d_hauteur;
+        int d_largeur;
+        int d_hauteur;
 };
 
 #endif // OBJETSRECLANGULAIRE_H

@@ -1,7 +1,7 @@
 #include "balle.h"
 #include "listeAngles.h"
 
-balle::balle(): d_positionX{200}, d_positionY{0}, d_vitesse{1}, d_angle{95}, d_rayon{10}
+balle::balle(): d_positionX{200}, d_positionY{0}, d_vitesse{1}, d_angle{45}, d_rayon{10}
 {
 }
 
@@ -82,7 +82,7 @@ void balle::deplacement()
         this->setPositionX(x+pasDeplacement);
         this->setPositionY(y-pasDeplacement);
     }
-    if(angle == angles.angleDroit)
+    if (angle == angles.angleDroit)
     {
         this->setPositionX(x);
         this->setPositionY(y+pasDeplacement);
@@ -94,20 +94,18 @@ void balle::deplacement()
     }
 }
 
-void balle::rebond( terrain * _terrain,const raquette& _raquette)
+void balle::rebond(terrain * _terrain, const raquette& _raquette)
 {
-
     for( auto& _brique: _terrain->getBriques())
     {
-
-        if (_brique->getEtat())
+        if (_brique->getEtat()== true)
         {
-
-
-            if (this->getPositionX()+this->getRayon() >= _brique->getPositionX() && this->getPositionX()+this->getRayon() <=  _brique->getPositionX() +_brique->getLargeur() )
+            if (this->getPositionX()+this->getRayon() >= _brique->getPositionX() &&
+                this->getPositionX()+this->getRayon() <=  _brique->getPositionX() +
+                _brique->getLargeur())
             {
                 // Collision de la balle avec la prtie bas de la brique
-                if ( this->getPositionY()+this->getRayon() == _brique->getPositionY())
+                if ( this->getPositionY()-this->getRayon() == _brique->getPositionY())
                 {
                     std::cout << " Collision de la balle avec la prtie bas de la brique \n";
                     _brique->setEtat();
@@ -128,24 +126,24 @@ void balle::rebond( terrain * _terrain,const raquette& _raquette)
                     _brique->setEtat();
                     if (this->getAngle() >= angles.anglePlat && this->getAngle() <=angles.angleRentrant)
                     {
-
                         this->setAngle(this->getAngle()-angles.angleDroit);
                     }
                     else
                     {
-
                         this->setAngle(this->getAngle()+angles.angleDroit);
                     }
                 }
             }
 
-            if (  this->getPositionY()+this->getRayon() >= _brique->getPositionY() && this->getPositionY()+this->getRayon()<= _brique->getPositionY()+_brique->getHauteur())
+            if (this->getPositionY()+this->getRayon() >= _brique->getPositionY() && this->getPositionY()+this->getRayon()<= _brique->getPositionY()+_brique->getHauteur())
               {
                 // Collision de la balle avec la prtie gauche de la brique
+
                 if ( this->getPositionX()+this->getRayon() == _brique->getPositionX())
                 {
-                    std::cout << "  Collision de la balle avec la prtie gauche de la brique\n";
                     _brique->setEtat();
+                    std::cout << "  Collision de la balle avec la prtie gauche de la brique\n";
+
                     if (this->getAngle() <= angles.anglePlat)
                     {
                         this->setAngle(this->getAngle()+angles.angleDroit);
@@ -154,7 +152,6 @@ void balle::rebond( terrain * _terrain,const raquette& _raquette)
                     {
                         this->setAngle(this->getAngle()-angles.angleDroit);
                     }
-
                 }
               }
 
@@ -184,7 +181,7 @@ void balle::rebond( terrain * _terrain,const raquette& _raquette)
     // Collision mur avec la raquette
     if (this->getPositionY() - this->getRayon() == _raquette.getHauteur() && this->getPositionX()>=_raquette.getPositionX() && this->getPositionX()<=(_raquette.getPositionX()+_raquette.getLargeur()) )
     {
-        if (this->getAngle() >= angles.anglePlat && this->getAngle() <=angles.angleRentrant)
+        if (this->getAngle() >= angles.anglePlat && this->getAngle() <= angles.angleRentrant)
         {
             this->setAngle(this->getAngle()-angles.angleDroit);
         }
@@ -196,7 +193,6 @@ void balle::rebond( terrain * _terrain,const raquette& _raquette)
     // Collision mur de gauche
     if(this->d_positionX   < this->getRayon() )
     {
-
         if (this->getAngle() <= angles.anglePlat)
         {
             this->setAngle(this->getAngle()-angles.angleDroit);
@@ -239,7 +235,6 @@ void balle::rebond( terrain * _terrain,const raquette& _raquette)
     }
 
     // Pareil pour les colision avec ta "planche", suffit de bien faire toute les vérification
-
 }
 
 

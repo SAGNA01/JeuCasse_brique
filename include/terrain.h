@@ -9,7 +9,7 @@
 class terrain : public objetsReclangulaire
 {
     public:
-        terrain(int largeur, int hauteur);
+        terrain(int positionX, int positionY,int largeur, int hauteur);
         int nombreDeBriques () const;
         void ajouterUneBrique( brique* _brique);
         std::vector<brique*> getBriques () const;

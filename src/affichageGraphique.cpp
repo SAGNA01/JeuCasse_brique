@@ -21,6 +21,7 @@ void affichageGraphique::dessinerLaBalle(const balle& _balle)
     setcolor(BLACK);
     circle(_balle.getPositionX(),_balle.getPositionY(),_balle.getRayon());
     floodfill(_balle.getPositionX(),_balle.getPositionY(),BLACK);
+
 }
 void affichageGraphique::dessinerLaRaquette(const raquette& _raquette)
 {
@@ -32,11 +33,16 @@ void affichageGraphique::miseAjourLaRaquette(const raquette& _raquette)
 {
     setcolor(BLACK);
     rectangle(_raquette.getPositionX(),_raquette.getHauteur(),_raquette.getPositionX()+_raquette.getLargeur(),_raquette.getHauteur());
+
 }
 void affichageGraphique::dessinerUneBrique( brique* _brique)
 {
     setcolor(YELLOW);
     rectangle(_brique->getPositionX(),_brique->getPositionY(),_brique->getPositionX()+_brique->getLargeur(),_brique->getPositionY()+_brique->getHauteur());
+
+
+   //   outtextxy(_brique->getPositionX(), _brique->getPositionY(),"XXXXX" );
+
 }
 void affichageGraphique::effacerLesBriqueCasses(terrain* _terrain)
 {
@@ -46,7 +52,6 @@ void affichageGraphique::effacerLesBriqueCasses(terrain* _terrain)
         {
             setcolor(BLACK);
             rectangle(_brique->getPositionX(),_brique->getPositionY(),_brique->getPositionX()+_brique->getLargeur(),_brique->getPositionY()+_brique->getHauteur());
-
         }
     }
 }
@@ -63,7 +68,7 @@ void affichageGraphique::dessinerLeTerrain( partie* _partie )
         if (x_init >= 50 )
         {
             _partie->getTerrain()->ajouterUneBrique( _brique );
-            x_init = x_init - 59 ;
+            x_init = x_init - 55 ;
 
         }
         else
@@ -74,7 +79,6 @@ void affichageGraphique::dessinerLeTerrain( partie* _partie )
 
         this->dessinerUneBrique(_brique);
     }
-
 }
 
 
