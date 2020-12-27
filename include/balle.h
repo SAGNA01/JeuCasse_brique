@@ -5,10 +5,9 @@
 #include "terrain.h"
 #include "raquette.h"
 #include "brique.h"
-#include "objetsDuJeu.h"
 
 
-class balle  /*public objetsDuJeu*/
+class balle
 {
     friend class  brique;
     public:

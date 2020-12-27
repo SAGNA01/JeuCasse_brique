@@ -7,6 +7,7 @@
 #include "brique.h"
 #include "terrain.h"
 #include "partie.h"
+
 class affichageGraphique
 {
 public:

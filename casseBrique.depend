@@ -87,13 +87,12 @@
 	"graphics.h"
 	"raquette.h"
 
-1608829623 c:\users\sagna\desktop\projetqualiecode\include\balle.h
+1609087831 c:\users\sagna\desktop\projetqualiecode\include\balle.h
 	<vector>
 	<iostream>
 	"terrain.h"
 	"raquette.h"
 	"brique.h"
-	"objetsDuJeu.h"
 
 1609086957 c:\users\sagna\desktop\projetqualiecode\include\terrain.h
 	<vector>
@@ -147,7 +146,7 @@
 1607680734 source:c:\users\sagna\desktop\projetqualiecode\src\raquetteui.cpp
 	"raquetteUI.h"
 
-1609086952 source:c:\users\sagna\desktop\projetqualiecode\src\terrain.cpp
+1609087831 source:c:\users\sagna\desktop\projetqualiecode\src\terrain.cpp
 	"terrain.h"
 	"iostream"
 
@@ -158,7 +157,7 @@
 	<math.h>
 	"graphics.h"
 
-1609085901 c:\users\sagna\desktop\projetqualiecode\include\objetsreclangulaire.h
+1609088311 c:\users\sagna\desktop\projetqualiecode\include\objetsreclangulaire.h
 
 1608829505 source:c:\users\sagna\desktop\projetqualiecode\src\objetsreclangulaire.cpp
 	"objetsReclangulaire.h"
@@ -181,10 +180,10 @@
 	"terrain.h"
 	<iostream>
 
-1609087217 source:c:\users\sagna\desktop\projetqualiecode\src\affichagegraphique.cpp
+1609087538 source:c:\users\sagna\desktop\projetqualiecode\src\affichagegraphique.cpp
 	"affichageGraphique.h"
 
-1607876064 c:\users\sagna\desktop\projetqualiecode\include\affichagegraphique.h
+1609087831 c:\users\sagna\desktop\projetqualiecode\include\affichagegraphique.h
 	"balle.h"
 	"graphics.h"
 	"raquette.h"

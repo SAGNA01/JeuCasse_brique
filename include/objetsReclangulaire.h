@@ -14,8 +14,8 @@ class objetsReclangulaire
 
         virtual void setPositionX(int position_x);
         virtual void setPositionY(int position_y);
-        void setLargeur(int largeur);
-        void setHauteur(int hauteur);
+        virtual void setLargeur(int largeur);
+        virtual void setHauteur(int hauteur);
     protected:
         int d_positionX;
         int d_positionY;
