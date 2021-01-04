@@ -3,16 +3,9 @@
 partie::partie( terrain* _terrain,int  nombreDeBrique):d_terrain{_terrain},d_nombreDeBrique{nombreDeBrique}
 {
 
-
 }
 partie::~partie()
 {
-
-}
-
-terrain* partie::getTerrain() const
-{
-    return this->d_terrain ;
 
 }
 
@@ -20,6 +13,19 @@ bool partie::partieEstGagner() const
 {
    return d_estGangne ;
 }
+int partie::getNbbriques() const
+{
+    return d_nombreDeBrique;
+}
+void partie::setEstGagner(bool gagner)
+{
+   d_estGangne  = gagner ;
+}
+terrain* partie::getTerrain() const
+{
+    return this->d_terrain;
+}
+
 void partie::creerLesBriques()
 {
     int x_init = this->getTerrain()->getLargeur();
@@ -40,12 +46,5 @@ void partie::creerLesBriques()
       }
     }
 }
-int partie::getNbbriques() const
-{
-    return d_nombreDeBrique;
-}
 
-void partie::setEstGagner(bool gagner)
-{
-   d_estGangne  = gagner ;
-}
+

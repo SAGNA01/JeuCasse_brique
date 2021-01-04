@@ -26,9 +26,9 @@ int main(int argc, char** argv)
     balle b{};
 
     terrain* t ;
-    t = new terrain (0,0,300,450) ;
+    t = new terrain (0,0,450,350) ;
     partie* p;
-    p = new partie(t,88);
+    p = new partie(t,48);
 
     uI.dessinerLaRaquette(r);
     uI.dessinerLeTerrain(p);
@@ -42,6 +42,7 @@ int main(int argc, char** argv)
             switch((c=getch()))
             {
             case KEY_LEFT:
+
                 uI.miseAjourLaRaquette(r);
                 r.deplacerGauche(t);
                 uI.dessinerLaRaquette(r);
@@ -50,10 +51,8 @@ int main(int argc, char** argv)
                 uI.miseAjourLaRaquette(r);
                 r.deplacerDroite(t);
                 uI.dessinerLaRaquette(r);
-
                 break;
             default:
-
                 break;
             }
         }

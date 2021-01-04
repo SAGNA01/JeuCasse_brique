@@ -13,7 +13,6 @@ class terrain : public objetsReclangulaire
         int nombreDeBriques () const;
         void ajouterUneBrique( brique* _brique);
         std::vector<brique*> getBriques () const;
-
         int nombreDeBriquesNonCassee() const;
     private:
         std::vector<brique*> d_briques;

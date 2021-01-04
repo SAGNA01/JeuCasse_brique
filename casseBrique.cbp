@@ -40,7 +40,6 @@
 		<Unit filename="include/doctest.h" />
 		<Unit filename="include/graphics.h" />
 		<Unit filename="include/listeAngles.h" />
-		<Unit filename="include/objetsDuJeu.h" />
 		<Unit filename="include/objetsReclangulaire.h" />
 		<Unit filename="include/partie.h" />
 		<Unit filename="include/raquette.h" />
@@ -49,7 +48,6 @@
 		<Unit filename="src/balle.cpp" />
 		<Unit filename="src/brique.cpp" />
 		<Unit filename="src/main.cpp" />
-		<Unit filename="src/objetsDuJeu.cpp" />
 		<Unit filename="src/objetsReclangulaire.cpp" />
 		<Unit filename="src/partie.cpp" />
 		<Unit filename="src/raquette.cpp" />

@@ -10,7 +10,7 @@ public:
     virtual ~partie();
     bool partieEstGagner() const;
     int getNbbriques() const;
-    void setEstGagner (bool gagner );
+    void setEstGagner(bool gagner);
     terrain* getTerrain() const;
     void creerLesBriques();
 
