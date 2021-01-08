@@ -42,7 +42,6 @@ int main(int argc, char** argv)
             switch((c=getch()))
             {
             case KEY_LEFT:
-
                 uI.miseAjourLaRaquette(r);
                 r.deplacerGauche(t);
                 uI.dessinerLaRaquette(r);

@@ -2,6 +2,7 @@
 #include "graphics.h"
 
 
+
 raquette::raquette(int positionX, int positionY, int largeur, int hauteur, int pasDeplacement) : objetsReclangulaire{positionX,
                                                                                                  positionY, largeur, hauteur},
                                                                                                  d_pasDeplacement{pasDeplacement}
